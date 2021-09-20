@@ -11,12 +11,13 @@ class PagesController extends Controller
     public function show($slug, $details = null)
     {
         $page = Page::findBySlug($slug);
-        if ($page->slug == "blog") {
-            $posts = Post::orderBy('created_at', 'desc')->paginate(10);
-            return view('blog', compact('posts'));
-        } else {
-            return view('page', ['page' => $page]);
-        }
+        return view('page', ['page' => $page]);
+    }
+
+    public function blog_index()
+    {
+        $posts = Post::orderBy('created_at', 'desc')->paginate(10);
+        return view('blog', compact('posts'));
     }
 
     public function blog_details($slug)

@@ -24,7 +24,7 @@
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                {{menu('main')}}
+                                {{menu('main','layouts.menu_build')}}
                                 {{-- <li class="current-menu-item"><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
                                 <li><a href="servicedetails.html">Service</a></li>
@@ -40,13 +40,13 @@
                 <div class="menu-btn">
                     @if (Route::has('login'))
                         @auth
-                            <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Logout</a>
-                        @else
+                            <a href="{{ url('/admin') }}" class="text-sm text-gray-700 underline">Halaman Admin</a>
+                        {{-- @else
                             <a href="{{ route('login') }}" class="btn theme-btn">Login</a>
 
                             @if (Route::has('register'))
                                 {{-- <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a> --}}
-                            @endif
+                            {{-- @endif --} --}}
                         @endauth
                     @endif
                 </div>

@@ -22,7 +22,7 @@
                             <div class="posting-date">
                                 <p><i class="icofont-calendar"></i>{{ date("d F Y", strtotime($item->created_at))}}</p>
                             </div>
-                            <h6><a href="{{route('blog_details', $post->slug)}}">{{$item->title}}</a></h6>
+                            <h6><a href="{{route('blog.details', $post->slug)}}">{{$item->title}}</a></h6>
                             <p>{{ Str::limit($item->excerpt, 50)}}</p>
                             @endforeach
                         </div>

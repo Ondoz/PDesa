@@ -112,7 +112,7 @@
                             <div class="blog-image" style="background-image: url({{asset('storage/'. $post->image)}})"></div>
                             <div class="blog-content">
                                 <span class="date">{{ date("d F Y", strtotime($post->created_at))}}</span>
-                                <h5><a href="{{route('blog_details', $post->slug)}}">{{$post->title}}</a></h5>
+                                <h5><a href="{{route('blog.details', $post->slug)}}">{{$post->title}}</a></h5>
                                 <p>{{$post->excerpt}}</p>
                             </div>
                         </div>
@@ -123,7 +123,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center">
-                        <a href="contact.html" class="btn theme-btn">Selengkapnya<i class="icofont-double-right"></i></a>
+                        <a href="{{route('blog.index')}}" class="btn theme-btn">Selengkapnya<i class="icofont-double-right"></i></a>
                     </div>
                 </div>
             </div>

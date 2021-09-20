@@ -20,8 +20,11 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/{slug}', [App\Http\Controllers\PagesController::class, 'show'])->name('page');
-Route::get('/blog/{slug}', [App\Http\Controllers\PagesController::class, 'blog_details'])->name('blog_details');
+Route::get('/page/{slug}', [App\Http\Controllers\PagesController::class, 'show'])->name('page');
+Route::group(['prefix' => 'blog'], function () {
+    Route::get('/', [App\Http\Controllers\PagesController::class, 'blog_index'])->name('blog.index');
+    Route::get('/{slug}', [App\Http\Controllers\PagesController::class, 'blog_details'])->name('blog.details');
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
