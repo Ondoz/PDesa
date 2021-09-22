@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="hero-content">
-                        <h1>{{setting('site.title-web')}}</h1>
+                        <h1>{!!setting('site.title-web')!!}</h1>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                             <img src="assets/images/service/serv-icon1.png" alt="Service Icon" />
                         </div>
                         <div class="serv-content">
-                            <h5><a href="servicedetails.html">{{setting('jumlah-penduduk.jumlah_penduduk')}}<br /> JUMLAH PENDUDUK</a></h5>
+                            <h5><a href="servicedetails.html">{!!setting('jumlah-penduduk.jumlah_penduduk')!!}<br /> JUMLAH PENDUDUK</a></h5>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                             <img src="assets/images/service/serv-icon2.png" alt="Service Icon" />
                         </div>
                         <div class="serv-content">
-                            <h5><a href="servicedetails.html">{{setting('jumlah-penduduk.jumlah_penduduk_laki_laki')}}<br />LAKI - LAKI</a></h5>
+                            <h5><a href="servicedetails.html">{!!setting('jumlah-penduduk.jumlah_penduduk_laki_laki')!!}<br />LAKI - LAKI</a></h5>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                             <img src="assets/images/service/serv-icon3.png" alt="Service Icon" />
                         </div>
                         <div class="serv-content">
-                            <h5><a href="servicedetails.html">{{setting('jumlah-penduduk.jumlah_penduduk_perempuan')}}<br />PEREMPUAN</a></h5>
+                            <h5><a href="servicedetails.html">{!!setting('jumlah-penduduk.jumlah_penduduk_perempuan')!!}<br />PEREMPUAN</a></h5>
                         </div>
                     </div>
                 </div>

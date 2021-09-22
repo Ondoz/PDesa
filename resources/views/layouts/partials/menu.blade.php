@@ -7,7 +7,7 @@
             <div class="header-inner d-lg-flex align-items-center">
 
                 <div class="logo-outer d-flex align-items-center">
-                    <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="Logo" /></a></div>
+                    <div class="logo"><a href="index.html"><img src="{{ Voyager::image(setting('site.logo')) }}" alt="Logo" style="height: 80px"/><span style="color: #FC5546;"><b> DESA </span> <span style="color: #000"> SENDANGADI</b></span></a></div>
                 </div>
 
                 <div class="nav-outer clearfix ml-lg-auto mr-lg-auto">
