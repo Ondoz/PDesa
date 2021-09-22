@@ -800,7 +800,6 @@ button:focus {
 }
 
 .page-breadcrumb .breadcrumb {
-    max-width: 200px;
     background: #FC5546;
     border-radius: 5px;
     margin-bottom: 0;

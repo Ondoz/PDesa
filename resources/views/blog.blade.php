@@ -58,6 +58,6 @@
         </div>
     </div>
 </section>
-<!-- END Blog Details Content --
+<!-- END Blog Details Content -->
 
 @endsection

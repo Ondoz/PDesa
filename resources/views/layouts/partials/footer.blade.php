@@ -1,5 +1,5 @@
 <footer class="main-footer">
-    <div class="footer-wrap rpt-95 pb-60 rpb-40">
+    <div class="footer-wrap rpt-95 pb-60 rpb-40 pt-30">
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 col-sm-9">

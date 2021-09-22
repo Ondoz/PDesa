@@ -8,7 +8,7 @@ use TCG\Voyager\Models\Post;
 
 class PagesController extends Controller
 {
-    public function show($slug, $details = null)
+    public function show($slug)
     {
         $page = Page::findBySlug($slug);
         return view('page', ['page' => $page]);
