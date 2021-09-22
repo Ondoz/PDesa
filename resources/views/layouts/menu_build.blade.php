@@ -64,6 +64,7 @@
         @include('voyager::menu.bootstrap', ['items' => $originalItem->children, 'options' => $options, 'innerLoop' => true])
         @endif
     </li>
-@endforeach
 
+    @endforeach
+    <li class=""><a href="{{url('admin/login')}}" class="" style="color: #FC5546;">Login</a></li>
 </ul>
