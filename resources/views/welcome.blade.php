@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="hero-content">
-                        <h1>SELAMATA DATANG DI WEBSITE KELURAHAN SENDANGADI</h1>
+                        <h1>{{setting('site.title-web')}}</h1>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                             <img src="assets/images/service/serv-icon1.png" alt="Service Icon" />
                         </div>
                         <div class="serv-content">
-                            <h5><a href="servicedetails.html">1000<br /> JUMLAH PENDUDUK</a></h5>
+                            <h5><a href="servicedetails.html">{{setting('jumlah-penduduk.jumlah_penduduk')}}<br /> JUMLAH PENDUDUK</a></h5>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                             <img src="assets/images/service/serv-icon2.png" alt="Service Icon" />
                         </div>
                         <div class="serv-content">
-                            <h5><a href="servicedetails.html">1000<br />LAKI - LAKI</a></h5>
+                            <h5><a href="servicedetails.html">{{setting('jumlah-penduduk.jumlah_penduduk_laki_laki')}}<br />LAKI - LAKI</a></h5>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                             <img src="assets/images/service/serv-icon3.png" alt="Service Icon" />
                         </div>
                         <div class="serv-content">
-                            <h5><a href="servicedetails.html">1000<br />PEREMPUAN</a></h5>
+                            <h5><a href="servicedetails.html">{{setting('jumlah-penduduk.jumlah_penduduk_perempuan')}}<br />PEREMPUAN</a></h5>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                 <div class="col-lg-6">
                     <div class="chooseus-right-content">
                         <div class="section-title">
-                            <h2>VISI KELUARAHAN</h2>
+                            <h2>VISI KALUARAHAN</h2>
                         </div>
                         <blockquote>{{setting('visi-dan-misi.visi')}}</blockquote>
                     </div>
@@ -101,7 +101,7 @@
                 <div class="col-12">
                     <div class="section-title text-center">
                         <span>Update Berita</span>
-                        <h2>Kelurahan Sendangadi</h2>
+                        <h2>Kalurahan Sendangadi</h2>
                     </div>
                 </div>
             </div>
