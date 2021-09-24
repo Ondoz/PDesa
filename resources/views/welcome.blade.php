@@ -2,7 +2,7 @@
 @section('content')
 
    <!-- START Hero Section -->
-   <section class="hero-section">
+   <section class="hero-section" style="background-image: url({{ Voyager::image(setting('site.logo')) }});z-index: auto;">
         <div class="hero-shape">
             <img src="assets/images/hero/hero-shape.png" alt="Hero Shape Image" />
         </div>
